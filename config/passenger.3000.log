@@ -1,0 +1,18 @@
+[ 2015-05-29 23:56:23.9830 17660/7f6dc3c727c0 age/Wat/Main.cpp:1264 ]: Starting PassengerAgent watchdog...
+[ 2015-05-29 23:56:23.9929 17663/7f87f083d7c0 age/Hel/Main.cpp:891 ]: Starting PassengerAgent server...
+[ 2015-05-29 23:56:23.9931 17663/7f87f083d7c0 age/Hel/Main.cpp:234 ]: PassengerAgent server running in multi-application mode.
+[ 2015-05-29 23:56:23.9953 17663/7f87f083d7c0 age/Hel/Main.cpp:645 ]: PassengerAgent server online, PID 17663
+[ 2015-05-29 23:56:24.0063 17668/7f0f669d97c0 age/Log/Main.cpp:442 ]: Starting PassengerAgent logger...
+[ 2015-05-29 23:56:24.0072 17668/7f0f669d97c0 age/Log/Main.cpp:323 ]: PassengerAgent logger online, PID 17668
+2015/05/29 23:56:26 [error] 17678#0: *4 "/home/ubuntu/ror_blog/config/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+
+[ 2015-05-29 23:56:56.3066 17663/7f87e98b8700 age/Hel/Main.cpp:455 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-05-29 23:56:56.3066 17663/7f87f083d7c0 age/Hel/Main.cpp:814 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-05-29 23:56:56.3067 17663/7f87e90b7700 Ser/Server.h:455 ]: [AdminServer] Shutdown finished
+[ 2015-05-29 23:56:56.3067 17663/7f87e98b8700 Ser/Server.h:455 ]: [ServerThr.1] Shutdown finished
+[ 2015-05-29 23:56:56.3071 17663/7f87f083d7c0 age/Hel/Main.cpp:876 ]: PassengerAgent server shutdown finished
+
+[ 2015-05-29 23:56:56.3079 17668/7f0f5fa19700 age/Log/Main.cpp:349 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-05-29 23:56:56.3080 17668/7f0f669d97c0 age/Log/Main.cpp:411 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-05-29 23:56:56.3080 17668/7f0f5fa19700 Ser/Server.h:455 ]: [LoggerAdminServer] Shutdown finished
+[ 2015-05-29 23:56:56.3081 17668/7f0f669d97c0 age/Log/Main.cpp:436 ]: PassengerAgent logger shutdown finished

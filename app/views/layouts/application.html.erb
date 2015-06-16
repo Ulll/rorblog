@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>let's im</title>
+  <style>
+  html,body
+    {
+        margin:0 auto;
+        background:url(http://list.qiniudn.com/papers.co-ml11-lake-mountain-dark-calm-nature-31-wallpaper.jpg) no-repeat center center;
+        background-attachment: fixed;
+        -moz-background-size:cover;
+        -ms-background-size:cover;
+        -webkit-background-size:cover;
+        background-size:cover;
+        min-height:100%;
+        min-width:100%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+        text-shadow: 0 1px 10px rgba(0,0,0,.5);
+        padding-bottom: 1rem;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .content {
+        position:absolute;
+        top:50%;
+        left:50%;
+        width:600px;
+        text-align: center;
+        margin-left: -300px;
+        margin-top: -100px;
+    }
+
+    .footer{
+        position:fixed;
+        bottom: 0px;
+        height:60px;
+        width:100%;
+        text-align: center;
+        background:green;
+    }
+
+    .footer p{
+        position:absolute;
+        top:8px;
+        left:50%;
+        width:200px;
+        margin-left: -100px;
+    }
+   
+    /*Nav Button*/
+    .ql_nav_btn {
+      -webkit-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: none;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      font-size: 28px;
+      font-size: 1.55555556rem;
+      position: fixed;
+      left: 40px;
+      top: 35px;
+      outline: 0!important;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      z-index: 10;
+    }
+    .ql_nav_btn i {
+      position: absolute;
+      text-align: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      line-height: 40px;
+      -webkit-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
+    }
+
+    .ql_nav_btn i.fa-arrow-left,
+    .ql_nav_btn.open i.fa-navicon {
+      opacity: 0;
+    }
+    .ql_nav_btn.open i.fa-arrow-left {
+      opacity: 1;
+    }
+    .ql_nav_btn:hover {
+      color: #ffffff;
+      background-color: #00b4ef;
+    }
+    .ql_nav_btn:active {
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+    }
+    .nav_sidebar_wrap {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+
+  </style>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
