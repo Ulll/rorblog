@@ -1,24 +1,28 @@
+<%= stylesheet_link_tag "girls", :media => "all" %>
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Girls</h1>
+<h1>this is a girl list</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Number</th>
+      <th>姓名</th>
+      <th>数量</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @girls.each do |girl| %>
+
+
+    <% @girls.each do |gg| %>
       <tr>
-        <td><%= girl.name %></td>
-        <td><%= girl.number %></td>
-        <td><%= link_to 'Show', girl %></td>
-        <td><%= link_to 'Edit', edit_girl_path(girl) %></td>
-        <td><%= link_to 'Destroy', girl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= gg.name %></td>
+        <td><%= gg.number %></td>
+        <td><%= link_to 'Show', gg %></td>
+        <td><%= link_to 'Edit', edit_girl_path(gg) %></td>
+        <td><%= link_to 'Destroy', gg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
