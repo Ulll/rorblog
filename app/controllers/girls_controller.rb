@@ -1,3 +1,5 @@
+require 'pry'
+
 class GirlsController < ApplicationController
   before_action :set_girl, only: [:show, :edit, :update, :destroy]
 
@@ -14,7 +16,9 @@ class GirlsController < ApplicationController
 
   # GET /girls/new
   def new
+    @mmm  = '2323'
     @girl = Girl.new
+    binding.pry
   end
 
   # GET /girls/1/edit
@@ -25,7 +29,6 @@ class GirlsController < ApplicationController
   # POST /girls.json
   def create
     @girl = Girl.new(girl_params)
-
     respond_to do |format|
       if @girl.save
         format.html { redirect_to @girl, notice: 'Girl was successfully created.' }
